@@ -1,0 +1,16 @@
+{
+  "parent": null,
+  "message": "First commit",
+  "timestamp": 1740222903648,
+  "files": [
+    {
+      "filePath": "./sample/file1.txt",
+      "hash": "db073364100a12cc632c9e69b1e09ede3086749855ec23bd68dbf58e91cc1b6d"
+    },
+    {
+      "filePath": "./sample/file2.txt",
+      "hash": "fcaf566cd0c1cb2129ce62d237bb4b06ebc1c04b1011be6eed87ce53727ab047"
+    }
+  ],
+  "merkleRoot": "2b4db24eca599b954c41192c2adc37b946e647df6788633f651d90f8db3d55bb"
+}

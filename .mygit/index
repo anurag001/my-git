@@ -1,0 +1,5 @@
+{
+  "./sample/file1.txt": "db073364100a12cc632c9e69b1e09ede3086749855ec23bd68dbf58e91cc1b6d",
+  "./sample/file2.txt": "fcaf566cd0c1cb2129ce62d237bb4b06ebc1c04b1011be6eed87ce53727ab047",
+  "./sample/sub/file3.txt": "f35d61cca11d19d4879a4eeb095b494c878014692b3ec68280f82e33f8317c59"
+}
