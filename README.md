@@ -32,7 +32,7 @@ npm install
 ### 1️⃣ Initialize MyGit Repository
 
 ```sh
-node mygit.js init
+const git = new MyGit();
 ```
 
 This creates the `.mygit/` directory with necessary folders and files.
@@ -40,7 +40,7 @@ This creates the `.mygit/` directory with necessary folders and files.
 ### 2️⃣ Add Files to Staging Area
 
 ```sh
-node mygit.js add path/to/file.txt
+git.add("./sample/file1.txt");
 ```
 
 This stores a hashed version of the file in `.mygit/objects/`.
@@ -48,7 +48,7 @@ This stores a hashed version of the file in `.mygit/objects/`.
 ### 3️⃣ Check Status
 
 ```sh
-node mygit.js status
+git.status();
 ```
 
 Outputs:
@@ -62,7 +62,7 @@ Outputs:
 ### 4️⃣ Commit Changes
 
 ```sh
-node mygit.js commit "Initial commit"
+git.commit("Initial commit");
 ```
 
 Outputs:
@@ -73,22 +73,23 @@ Committed as d1a2b3c4 (Merkle Root: a1b2c3d4e5)
 
 ### 5️⃣ Compare Commits
 
-```sh
-node mygit.js compareCommits <commit1_hash> <commit2_hash>
-```
+````sh
+git.compareCommits(<hash1>, <hash2>);```
 
 Outputs:
 
-```
+````
+
 Comparing d1a2b3c4 ↔ e5f6g7h8
 ❌ Changes detected! (Merkle roots differ)
-```
+
+````
 
 ### 6️⃣ Checkout a Commit
 
 ```sh
-node mygit.js checkout <commit_hash>
-```
+git.checkout(<commit_hash>)
+````
 
 This restores files from a previous commit.
 
